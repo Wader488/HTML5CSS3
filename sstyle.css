@@ -1,0 +1,183 @@
+/* base style*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial";
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* base elements */
+.block-white {
+    background-color: #fff;
+}
+
+/* base elements */
+.block-gray {
+    background-color: #445161;
+}
+
+
+
+
+/* site */
+
+main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    height: 323px;
+    background-color: #445162;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.product {
+    padding-top: 50px;
+
+    margin-left: -3px;
+}
+
+.product ul {
+    padding-left: 39px;
+    padding-top: 34px;
+}
+
+
+.product ul li {
+    list-style-image: url(img/check_icon.png);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+header .block-white {
+    width: 469px;
+    height: 214px;
+    margin-top: 50px;
+}
+
+/* about */
+
+.about {
+    height: 344px;
+    background-color: #fff;
+}
+
+.about article {
+    width: 653px;
+}
+
+.about article h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about article p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about article p:nth-child(2) {
+    padding-bottom: 20px;
+}
+
+.about .block-gray {
+    width: 430px;
+    height: 245px;
+    margin-top: 50px;
+}
+
+/* dignity */
+
+.dignity {
+    height: 418px;
+    background-color: #f5f5f5;
+}
+
+.dignity article h2 {
+    text-align: center;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-top: 50px;
+    padding-bottom: 29px;
+}
+
+.dignity article ul {
+    width: 568px;
+    float: left;
+}
+.dignity article ul:nth-child(3) {
+    margin-left: 22px;
+}
+
+.dignity article li {
+    list-style-type: none;
+    background-image: url(img/2-layers.jpg);
+    background-repeat: no-repeat;
+    padding-left: 41px;
+background-position: 0px 3px;
+color: #333333;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+.dignity article li:nth-child(n+2) {
+    padding-top: 24px;
+    background-position: 0px 27px;
+}
+
+/* test 
+
+
+
+ <div class="test">
+              
+          </div>
+
+*/
+.test {
+    position: absolute;
+    top: 272px;
+    height: 50px;
+    width: 100%;
+    background-color: red;
+}
