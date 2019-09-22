@@ -20,6 +20,10 @@ body {
     padding-right: 50px;
 }
 
+.block-padding {
+    padding: 50px;
+}
+
 .float-left {
     float: left;
 }
@@ -43,7 +47,7 @@ body {
 
 /* site */
 
-main {
+.container {
     width: 1280px;
     margin: 0 auto;
 }
@@ -145,6 +149,7 @@ header .block-white {
     width: 568px;
     float: left;
 }
+
 .dignity article ul:nth-child(3) {
     margin-left: 22px;
 }
@@ -154,30 +159,359 @@ header .block-white {
     background-image: url(img/2-layers.jpg);
     background-repeat: no-repeat;
     padding-left: 41px;
-background-position: 0px 3px;
-color: #333333;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+    background-position: 0px 3px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
+
 .dignity article li:nth-child(n+2) {
     padding-top: 24px;
     background-position: 0px 27px;
 }
 
-/* test 
+
+/* screenshots */
+.screenshots {
+    background-color: #fff;
+}
+
+.screenshots h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.screenshots article {
+    float: left;
+    width: calc(50% - 8px);
+
+}
+
+.screenshots article:nth-of-type(odd) {
+    margin-right: 16px;
+}
+
+.screenshots article:nth-of-type(n+3) {
+    margin-top: 30px;
+}
+
+.screenshots img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    padding-right: 15px;
+
+}
+
+
+.screenshots h3 {
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.screenshots p {
+    padding-top: 10px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+}
+
+
+/* reviews */
+
+.reviews {
+    background-color: #f5f5f5;
+}
+
+.reviews h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.reviews .reviews-blocks {
+    float: left;
+    width: calc(50% - 8px);
+}
+
+.reviews .reviews-blocks:nth-of-type(odd) {
+    margin-right: 16px;
+}
+
+.reviews .reviews-blocks:nth-of-type(n+3) {
+    margin-top: 24px;
+}
+
+.reviews .reviews-blocks img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 28px;
+}
+
+.reviews .reviews-blocks-text {
+    background-color: #ebebeb;
+    padding: 15px 20px 15px 15px;
+    float: right;
+    width: 437px;
+    border-radius: 5px;
+    position: relative;
+}
 
 
 
- <div class="test">
-              
-          </div>
+.reviews .reviews-blocks-text p {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    font-style: italic;
+}
 
-*/
-.test {
+.reviews .reviews-blocks-text p:last-of-type {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-top: 15px;
+}
+
+.reviews .reviews-blocks-text .romb {
     position: absolute;
-    top: 272px;
-    height: 50px;
-    width: 100%;
-    background-color: red;
+    width: 20px;
+    height: 20px;
+    background-color: #ebebeb;
+    transform: rotate(45deg);
+    left: -10px;
+    top: 30px;
+
+}
+
+
+/* buy */
+.buy {
+    background-color: #fff;
+}
+
+.buy h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.buy .buyblocks {
+    margin: 0 auto;
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buy .buyblocks .buyblock {
+
+    background-color: #445162;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.buy .buyblocks .buyblock h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.buy .buyblocks .buyblock .buyblockprice {
+    height: 71px;
+    border: 2px solid #445162;
+    background-color: #fff;
+}
+
+.buy .buyblocks .buyblock .buyblockprice p {
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    line-height: 71px;
+    text-align: center;
+}
+
+.buy .buyblocks .buyblock .buyblocktext {
+    padding: 20px;
+}
+
+.buy .buyblocks .buyblock .buyblocktext ol {
+    margin-left: 20px;
+}
+
+.buy .buyblocks .buyblock .buyblocktext li {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.buy .buyblocks .buyblock a {
+    width: 260px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* footer*/
+
+.footer {
+    background-color: #445162;
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.footer .contacts {
+    width: 785px;
+    margin: 0 auto;
+}
+
+.footer .contacts input {
+    /* Style for "Shape 4" */
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.footer .contacts input[type="email"],
+input[type="submit"],
+textarea {
+    margin-top: 21px;
+
+}
+
+
+
+.footer .contacts input[type="text"],
+input[type="email"] {
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .contacts textarea {
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Arial;
+}
+
+.footer .contacts p:last-of-type {
+    text-align: center;
+}
+
+.footer .contacts input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.contact-list div {
+    height: 27px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.contact-list div:not(.media) {
+    margin-bottom: 18px;
+    padding-left: 30px;
+    line-height: 27px;
+}
+
+.skype {
+    background: url(img/skype_icon.png) no-repeat left center;
+
+}
+
+.icq {
+    background: url(img/icq_icon.png) no-repeat left center;
+
+}
+
+.email {
+    background: url(img/email_icon.png) no-repeat left center;
+
+}
+
+.phone {
+    background: url(img/phone_icon.png) no-repeat left center;
+
+}
+
+
+.media {}
+
+.media p {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.media p i {
+    font-size: 20px;
+    padding-top: 12px;
+    color: #445162;
+}
+
+
+.copy {
+    text-align: center;
+    line-height: 26px;
 }
