@@ -42,19 +42,8 @@ body {
     background-color: #445161;
 }
 
-
-
-
-/* site */
-
-.container {
-    width: 1280px;
-    margin: 0 auto;
-}
-
 /* header */
 header {
-    height: 323px;
     background-color: #445162;
 }
 
@@ -66,8 +55,6 @@ h1 {
 }
 
 .product {
-    padding-top: 50px;
-
     margin-left: -3px;
 }
 
@@ -75,7 +62,6 @@ h1 {
     padding-left: 39px;
     padding-top: 34px;
 }
-
 
 .product ul li {
     list-style-image: url(img/check_icon.png);
@@ -88,26 +74,20 @@ h1 {
 header .block-white {
     width: 469px;
     height: 214px;
-    margin-top: 50px;
 }
 
 /* about */
 
 .about {
-    height: 344px;
     background-color: #fff;
 }
 
-.about article {
-    width: 653px;
-}
 
 .about article h2 {
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    padding-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -125,13 +105,11 @@ header .block-white {
 .about .block-gray {
     width: 430px;
     height: 245px;
-    margin-top: 50px;
 }
 
 /* dignity */
 
 .dignity {
-    height: 418px;
     background-color: #f5f5f5;
 }
 
@@ -141,18 +119,17 @@ header .block-white {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    padding-top: 50px;
     padding-bottom: 29px;
 }
 
-.dignity article ul {
+/*.dignity article ul {
     width: 568px;
     float: left;
-}
+}*/
 
-.dignity article ul:nth-child(3) {
+/*.dignity article ul:nth-child(3) {
     margin-left: 22px;
-}
+}*/
 
 .dignity article li {
     list-style-type: none;
@@ -164,6 +141,7 @@ header .block-white {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
 }
 
 .dignity article li:nth-child(n+2) {
@@ -171,32 +149,31 @@ header .block-white {
     background-position: 0px 27px;
 }
 
+/*.dignity article li:nth-child(even) {
+    margin-left: 19px;
+}*/
 
 /* screenshots */
-.screenshots {
+/*.screenshots {
     background-color: #fff;
-}
+}*/
 
 .screenshots h2 {
-    color: #445161;
+    color: #fff;
     font-size: 30px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
     padding-bottom: 35px;
+    width: 100%;
 }
 
-.screenshots article {
-    float: left;
-    width: calc(50% - 8px);
 
-}
-
-.screenshots article:nth-of-type(odd) {
+/*.screenshots article:nth-of-type(odd) {
     margin-right: 16px;
-}
+}*/
 
-.screenshots article:nth-of-type(n+3) {
+.screenshots article:nth-of-type(n+2) {
     margin-top: 30px;
 }
 
@@ -210,14 +187,14 @@ header .block-white {
 
 
 .screenshots h3 {
-    color: #445161;
+    color: #fff;
     font-size: 24px;
     font-weight: 400;
 }
 
 .screenshots p {
     padding-top: 10px;
-    color: #333333;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -229,6 +206,7 @@ header .block-white {
 
 .reviews {
     background-color: #f5f5f5;
+    position: relative;
 }
 
 .reviews h2 {
@@ -238,18 +216,21 @@ header .block-white {
     line-height: 23px;
     text-align: center;
     padding-bottom: 35px;
+    width: 100%;
 }
 
 .reviews .reviews-blocks {
-    float: left;
-    width: calc(50% - 8px);
+    /*   float: left;
+    width: calc(50% - 8px);*/
+    display: flex;
+    justify-content: center;
 }
 
-.reviews .reviews-blocks:nth-of-type(odd) {
+/*.reviews .reviews-blocks:nth-of-type(odd) {
     margin-right: 16px;
-}
+}*/
 
-.reviews .reviews-blocks:nth-of-type(n+3) {
+.reviews .reviews-blocks:nth-of-type(n+2) {
     margin-top: 24px;
 }
 
@@ -258,16 +239,17 @@ header .block-white {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    margin-right: 28px;
+    margin-right: 15px;
 }
 
 .reviews .reviews-blocks-text {
     background-color: #ebebeb;
     padding: 15px 20px 15px 15px;
-    float: right;
+    float: left;
     width: 437px;
     border-radius: 5px;
     position: relative;
+    text-align: justify;
 }
 
 
@@ -316,17 +298,21 @@ header .block-white {
 
 .buy .buyblocks {
     margin: 0 auto;
-    width: 990px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+}
+
+.buy .buyblocks .buyblock:nth-of-type(n+2) {
+
+    margin-top: 30px;
+
 }
 
 .buy .buyblocks .buyblock {
 
     background-color: #445162;
     border-radius: 5px;
-    width: 300px;
+
 }
 
 .buy .buyblocks .buyblock h3 {
@@ -356,6 +342,8 @@ header .block-white {
 
 .buy .buyblocks .buyblock .buyblocktext {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .buy .buyblocks .buyblock .buyblocktext ol {
@@ -370,7 +358,7 @@ header .block-white {
 }
 
 .buy .buyblocks .buyblock a {
-    width: 260px;
+    width: calc(100% - 40px);
     height: 40px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -400,16 +388,16 @@ header .block-white {
     line-height: 23px;
     text-align: center;
     padding-bottom: 35px;
+    width: 100%;
 }
 
 .footer .contacts {
-    width: 785px;
-    margin: 0 auto;
+    display: block;
 }
 
 .footer .contacts input {
     /* Style for "Shape 4" */
-    width: 500px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
 }
@@ -432,7 +420,7 @@ input[type="email"] {
 }
 
 .footer .contacts textarea {
-    width: 500px;
+    width: 100%;
     height: 170px;
     border-radius: 5px;
     color: #445162;
@@ -455,6 +443,14 @@ input[type="email"] {
     font-weight: 600;
     line-height: 40px;
     text-transform: uppercase;
+}
+
+.contact-list {
+    padding-top: 25px;
+}
+
+.contact-list > div:nth-last-of-type(n+2) {
+    margin-left: calc(50% - 100px);
 }
 
 .contact-list div {
@@ -492,7 +488,9 @@ input[type="email"] {
 }
 
 
-.media {}
+.media {
+    justify-content: center;
+}
 
 .media p {
     display: inline-block;
@@ -514,4 +512,258 @@ input[type="email"] {
 .copy {
     text-align: center;
     line-height: 26px;
+}
+
+/* ------------Lesson 3 add-in's------------ */
+
+/*video*/
+
+/*.video-block{
+       width: 100%;
+     max-width: 100%; 
+    margin: auto;
+    display: block;
+    position: relative; 
+}*/
+
+.video-block1{
+       width: 100%;
+     max-width: 100%; 
+    margin: auto;
+    display: block;
+    position: relative; 
+}
+.video-block .video1 video{
+       width: 100%; 
+}
+.video-block1 .video2 video {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    height: 1050px;
+}
+.screenshots{
+position: absolute;
+    top: 0;
+    display: flex;
+   /* height: 100%;*/
+}
+
+
+
+
+
+/* Bootstrap overrides */
+ol,
+ul {
+    margin-bottom: 0px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-12,
+.col-lg-6 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.container{
+width: 540px;
+}
+
+p,
+h2,
+h3 {
+    margin-bottom: 0px;
+}
+
+/* media query */
+
+@media (min-width: 576px){
+.container {
+    width: unset;
+    }
+
+}
+@media (min-width: 768px) {
+    .dignity article li {
+        float: left;
+        width: calc(50% - 10px);
+
+    }
+
+    .dignity article ul:nth-child(3) {
+        margin-left: 22px;
+    }
+
+    .dignity article li:nth-child(2) {
+        padding-top: 0px;
+        background-position: 0px 3px;
+    }
+
+    .dignity article li:nth-child(n+3) {
+        padding-top: 24px;
+        background-position: 0px 27px;
+    }
+
+    .dignity article li:nth-child(even) {
+        margin-left: 19px;
+    }
+
+    .footer .contacts {
+        display: flex;
+    }
+    
+     .video-block1 .video2 video {
+        max-height: 850px;
+}   
+}
+
+@media (min-width: 992px) {
+/*    video {
+        width: 960px;
+    }*/
+
+    .screenshots article {
+        max-width: calc(50% - 8px);
+
+    }
+
+    .screenshots article:nth-of-type(odd) {
+        margin-right: 16px;
+    }
+
+    .screenshots article:nth-of-type(2) {
+        margin-top: 0px;
+    }
+
+    .screenshots article:nth-of-type(n+3) {
+        margin-top: 30px;
+    }
+
+    .reviews .reviews-blocks {
+
+        display: block;
+        justify-content: unset;
+        float: left;
+    }
+
+    .reviews .reviews-blocks:nth-of-type(2) {
+        margin-top: 0px;
+    }
+
+    .reviews .reviews-blocks:nth-of-type(n+3) {
+        margin-top: 24px;
+    }
+
+    .reviews .reviews-blocks img {
+        margin-right: 20px;
+    }
+
+    .reviews .reviews-blocks-text {
+
+        width: unset;
+        max-width: 77%;
+    }
+
+    .buy {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buy .buyblocks {
+        margin: 0 auto;
+        width: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .buy .buyblocks .buyblock {
+
+        background-color: #445162;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    .buy .buyblocks .buyblock:nth-of-type(n+2) {
+
+        margin-top: 0px;
+
+    }
+
+    .buy .buyblocks .buyblock a {
+        width: 260px;
+    }
+
+
+
+    .footer .contacts textarea,
+    input {
+        width: 500px;
+    }
+
+    .footer .contacts input {
+        width: 500px;
+    }
+
+    .footer form {
+        margin-left: 0px;
+        max-width: 500px;
+    }
+
+.contact-list > div:nth-last-of-type(n+2) {
+     margin-left: 0px;
+}    
+    
+   .media {
+    justify-content: unset;
+}
+    .footer .contact-list{
+        padding-left: 46px;
+    max-width: 34%;}
+    
+    .video-block1 .video2 video {
+        max-height: 570px;
+}
+    
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+ /*     video {
+        width: 1140px;
+    }*/
+
+    .buy .buyblocks {
+        width: 990px;
+    }
+
+    .footer form {
+        margin-left: 16.666666%;
+    }
+    
+    .footer .contact-list{
+        max-width: 30%;
+    }
+    
+       .video-block1 .video2 video {
+            max-height: 500px;
+}
+}
+@media (min-width: 1290px) {
+    .container {
+        max-width: 1280px;
+    }
+
 }
